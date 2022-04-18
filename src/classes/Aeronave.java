@@ -1,4 +1,4 @@
-package controller;
+package classes;
 
 public class Aeronave {
 

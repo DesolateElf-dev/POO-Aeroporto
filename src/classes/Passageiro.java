@@ -6,8 +6,16 @@ public class Passageiro extends Pessoa {
 	private double pesoBagagem;
 	private String destino;
 	
+	public void setPassageiro(int codPassagem, double pesoBagagem, String destino) {
+		this.codPassagem = codPassagem;
+		this.pesoBagagem = pesoBagagem;
+		this.destino = destino;
+	}
 	
-	
+	public void checkIn() {
+		System.out.printf("%nO passageiro %s, passagem %d com destino %s, %nacabou de fazer check-in com %.1fkg de bagagem"
+				,this.getNome(), codPassagem, destino, pesoBagagem);
+	}
 	
 	
 	public int getCodPassagem() {

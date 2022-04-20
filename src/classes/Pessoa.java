@@ -16,7 +16,7 @@ public class Pessoa {
 		this.idade = idade;
 		this.peso = peso;
 		
-		System.out.println("O "+nome+" acabou de nascer! Com "+idade+" anos e "+peso+ "kg");
+		System.out.println("\nO "+nome+" acabou de nascer! Com "+idade+" anos e "+peso+ "kg");
 	}
 	
 	public void setIdade(int idade) {

@@ -13,7 +13,7 @@ public class Aeroporto extends Aeronave{
 		this.capacidadeAeronaves = capacidadeAeronaves;
 		this.capacidadePessoas = capacidadePessoas;
 		
-		System.out.println("Um novo aeroporto acaba de ser construído!");
+		System.out.println("\nUm novo aeroporto acaba de ser construído!");
 		System.out.printf("Seu nome é %s, possui capacidade de %d pessoas e %d aeronaves",nomeAeroporto, capacidadeAeronaves, capacidadePessoas);
 	}
 	
@@ -21,7 +21,7 @@ public class Aeroporto extends Aeronave{
 		
 		int aeronaves = aleatorioEntre(0,20);
 		
-		System.out.printf("%nExistem %d aeronaves esperando para decolar", aeronaves);
+		System.out.printf("%nExistem %d aeronaves esperando no %s para decolar", aeronaves, nomeAeroporto);
 	}
 
 	public String getNomeAeroporto() {

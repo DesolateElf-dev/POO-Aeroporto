@@ -13,7 +13,8 @@ public class Passageiro extends Pessoa {
 	}
 	
 	public void checkIn() {
-		System.out.printf("%nO passageiro %s, passagem %d com destino %s, %nacabou de fazer check-in com %.1fkg de bagagem"
+		System.out.printf("O passageiro %s, passagem %d com destino %s, "
+				+ "%nacabou de fazer check-in com %.1fkg de bagagem%n"
 				,this.getNome(), codPassagem, destino, pesoBagagem);
 	}
 	

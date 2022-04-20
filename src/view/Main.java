@@ -1,24 +1,27 @@
 package view;
 
+import classes.Passageiro;
+import classes.Piloto;
 import controller.Aeroporto;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		//Piloto piloto1 = new Piloto();
+		Piloto piloto1 = new Piloto();
+		piloto1.setPessoa("João", 34, 75.3);
+		piloto1.setPiloto("Noite", 2000, "Comercial");
+		piloto1.pilotando();
 		
-		//piloto1.setPessoa("João", 34, 75.3);
 		
-		//Passageiro passageiro1 = new Passageiro();
+		Passageiro passageiro1 = new Passageiro();
+		passageiro1.setPessoa("Carlos", 27, 84.5);
+		passageiro1.setPassageiro(20221804, 62.3, "São Paulo");		
+		passageiro1.checkIn();
 		
-		//passageiro1.setPessoa("Carlos", 27, 84.5);
-		//passageiro1.setPassageiro(20221804, 62.3, "São Paulo");		
-		//passageiro1.checkIn();
-		
-		//Aeroporto aeroporto1 = new Aeroporto();	
-		//aeroporto1.setAeroporto("Galeão", 1500, 20);
-		//aeroporto1.aeronavesNaFila();
+		Aeroporto aeroporto1 = new Aeroporto();	
+		aeroporto1.setAeroporto("Galeão", 1500, 20);
+		aeroporto1.aeronavesNaFila();
 				
 	}
 

@@ -8,8 +8,14 @@ public class Piloto extends Pessoa {
 	
 		
 	public void pilotando() {
-		System.out.println("O piloto está pilotando...");
-	}	
+		System.out.printf("O piloto %s está pilotando...%n", this.getNome());
+	}
+	
+	public void setPiloto(String turnoPiloto, int tempoDeVoo, String categoriaPiloto) {
+		this.turnoPiloto = turnoPiloto;
+		this.tempoDeVoo = tempoDeVoo;
+		this.turnoPiloto = turnoPiloto;
+	}
 	
 	public String getTurnoPiloto() {
 		return turnoPiloto;
